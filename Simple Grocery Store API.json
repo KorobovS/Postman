@@ -1,0 +1,2488 @@
+{
+	"info": {
+		"_postman_id": "37cc3c6d-123f-4dd5-94f5-7457d5d26827",
+		"name": "Simple Grocery Store API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21928985",
+		"_collection_link": "https://gold-space-417809.postman.co/workspace/Team-Workspace~444cfe5d-29e2-432d-8b13-e5e4d288c60e/collection/21928985-37cc3c6d-123f-4dd5-94f5-7457d5d26827?action=share&source=collection_link&creator=21928985"
+	},
+	"item": [
+		{
+			"name": "Продукты",
+			"item": [
+				{
+					"name": "Сортировка продуктов",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "category=meat-seafood",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?category=meat-seafood",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "category",
+													"value": "meat-seafood"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "category=fresh-produce",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?category=fresh-produce",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "category",
+													"value": "fresh-produce"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "category=candy",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?category=candy",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "category",
+													"value": "candy"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "category=bread-bakery",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?category=bread-bakery",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "category",
+													"value": "bread-bakery"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "category=dairy",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?category=dairy",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "category",
+													"value": "dairy"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "category=eggs",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?category=eggs",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "category",
+													"value": "eggs"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "category=coffee",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?category=coffee",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "category",
+													"value": "coffee"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "category=coffe",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?category=coffe",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "category",
+													"value": "coffe"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "results=11",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?results=11",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "results",
+													"value": "11"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "results=1",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?results=1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "results",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "results=20",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?results=20",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "results",
+													"value": "20"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "available=false",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?available=false",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "available",
+													"value": "false"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "available=true",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?available=true",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "available",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "results=0",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?results=0",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "results",
+													"value": "0"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "без results",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});\r",
+													"\r",
+													"pm.collectionVariables.set(\"productId\", pm.response.json()[1].id);"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Негативные",
+							"item": [
+								{
+									"name": "results=-1",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?results=-1",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "results",
+													"value": "-1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "results=21",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?results=21",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "results",
+													"value": "21"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "available=null",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products?available=null",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products"
+											],
+											"query": [
+												{
+													"key": "available",
+													"value": "null"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Продукт по id",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "Существующий id",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										},
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products/{{productId}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products",
+												"{{productId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Существующий id product-label=true",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										},
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products/4646?product-label=true",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products",
+												"4646"
+											],
+											"query": [
+												{
+													"key": "product-label",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Существующий id product-label=false",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										},
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products/4646?product-label=false",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products",
+												"4646"
+											],
+											"query": [
+												{
+													"key": "product-label",
+													"value": "false"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Негативные",
+							"item": [
+								{
+									"name": "Не существующий id",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										},
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products/464646",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products",
+												"464646"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Не существующий id product-label=true",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										},
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products/466?product-label=true",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products",
+												"466"
+											],
+											"query": [
+												{
+													"key": "product-label",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Не существующий id product-label=\"true\"",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Код ответа 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										},
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/products/4646?product-label=\"true\"",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"products",
+												"4646"
+											],
+											"query": [
+												{
+													"key": "product-label",
+													"value": "\"true\""
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Список всех продуктов",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Код ответа 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Корзина",
+			"item": [
+				{
+					"name": "Создать корзину",
+					"item": [
+						{
+							"name": "Новая корзина",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 201\", function () {\r",
+											"    pm.response.to.have.status(201);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"cartIdNEW\", '\"' + pm.response.json().cartId + '\"');\r",
+											"pm.collectionVariables.set(\"cartId\", pm.response.json().cartId);"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/carts",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"carts"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Получить корзину",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "Получить корзину с корректным cartId",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Негативные",
+							"item": [
+								{
+									"name": "Получить корзину не корректным cartId",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/carts/ZJr-JAgy9nHP8kScp",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"ZJr-JAgy9nHP8kScp"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Добавить товар в корзину",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "Добавить товар в корзину с корректным cartId и quantity=3",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Is created?\", function () {\r",
+													"    var jsonData = pm.response.json();\r",
+													"    pm.expect(jsonData.created).to.eql(true);\r",
+													"});\r",
+													"\r",
+													"pm.collectionVariables.set(\"itemId\", pm.response.json().itemId);"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n   \"productId\": {{productId}},\r\n   \"quantity\": 3\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}/items",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}",
+												"items"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Добавить товар в корзину с корректным cartId",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n   \"productId\": 4643\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}/items",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}",
+												"items"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Негативные",
+							"item": [
+								{
+									"name": "Добавить товар в корзину с не корректным cartId и quantity=3",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n   \"productId\": 4643,\r\n   \"quantity\": 3\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carts/YRVmV1NgPPjT7a-Ic/items",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"YRVmV1NgPPjT7a-Ic",
+												"items"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Добавить два товара в корзину с корректным cartId и quantity=3",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n   [\"productId\": 4643,\r\n   \"quantity\": 3],\r\n   [\"productId\": 4646,\r\n   \"quantity\": 3]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}/items",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}",
+												"items"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Добавить товар в корзину с корректным cartId и quantity=0",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n   \"productId\": 4643,\r\n   \"quantity\": 0\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}/items",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}",
+												"items"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Удалить товар из корзины",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "Удалить товар в корзине",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 204\", function () {\r",
+													"    pm.response.to.have.status(204);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}/items/{{itemId}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}",
+												"items",
+												"{{itemId}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Негативные",
+							"item": [
+								{
+									"name": "Удалить товар в корзине некорректный cartId",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/carts/YRVmV1NgPPjT7a-Ics/items/{{itemId}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"YRVmV1NgPPjT7a-Ics",
+												"items",
+												"{{itemId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Удалить товар в корзине некорректный itemId Copy",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}/items/itemId",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}",
+												"items",
+												"itemId"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Получить товары в корзине",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "С корректными данными",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}/items",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}",
+												"items"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Негативные",
+							"item": [
+								{
+									"name": "cartId выдуманный",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/carts/RVmV1NgPPjT7a-Ics/items",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"RVmV1NgPPjT7a-Ics",
+												"items"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Изменить товар в корзине",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "С валидными данными",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 204\", function () {\r",
+													"    pm.response.to.have.status(204);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"quantity\": 5\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}/items/{{itemId}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}",
+												"items",
+												"{{itemId}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Негативные",
+							"item": [
+								{
+									"name": "С выдуманным cartId",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"quantity\": 5\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carts/v66HJwqxJ1KaL-Nz4/items/{{itemId}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"v66HJwqxJ1KaL-Nz4",
+												"items",
+												"{{itemId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "С выдуманным itemId",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 404\", function () {\r",
+													"    pm.response.to.have.status(404);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"quantity\": 5\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}/items/24563748",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}",
+												"items",
+												"24563748"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Без body",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 400\", function () {\r",
+													"    pm.response.to.have.status(400);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}/items/{{itemId}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}",
+												"items",
+												"{{itemId}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Заменить товар в корзине",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "С валидными данными",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 204\", function () {\r",
+													"    pm.response.to.have.status(204);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Проверить замену\", function () {\r",
+													"    var product = pm.collectionVariables.get(\"product\");\r",
+													"    var productId = pm.collectionVariables.get(\"productId\");\r",
+													"    \r",
+													"    pm.expect(product).to.eql(productId);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										},
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													"pm.sendRequest(\"http://simple-grocery-store-api.online/carts/v66HJwqxJ1KaL-Nz4ga-p\", (err, response) => {\r",
+													"    \r",
+													"    var resp = response.json().items[0].productId;\r",
+													"\r",
+													"    pm.collectionVariables.set(\"product\", resp);\r",
+													"})"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"productId\": {{productId}},\r\n    \"quantity\": 10\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/carts/{{cartId}}/items/{{itemId}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"carts",
+												"{{cartId}}",
+												"items",
+												"{{itemId}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Заказы",
+			"item": [
+				{
+					"name": "Получить все заказы",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "Валидный токен",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});\r",
+													"\r",
+													"pm.collectionVariables.set(\"orderId\", pm.response.json()[0].id)"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/orders",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"orders"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Негативные",
+							"item": [
+								{
+									"name": "Выдуманный токен",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 401\", function () {\r",
+													"    pm.response.to.have.status(401);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "dcsdhvcjudsbiclsdi;ckosdc,sdlcnabpl",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{url}}/orders",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"orders"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Создать новый заказ",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "Валидные данные",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													"/*\r",
+													"var url = pm.collectionVariables.get(\"url\");\r",
+													"\r",
+													"pm.test(\"Создание корзины\", function getName() {\r",
+													"\r",
+													"    const addNewCart = {\r",
+													"        url: url + \"/carts\",\r",
+													"        method: 'POST'\r",
+													"    };\r",
+													"\r",
+													"    pm.sendRequest(addNewCart, (err, response) => {\r",
+													"\r",
+													"        var cartId = response.json().cartId;\r",
+													"        var productId = pm.collectionVariables.get(\"productId\");\r",
+													"    \r",
+													"        pm.collectionVariables.set(\"cartId\", '\"' + cartId + '\"');\r",
+													"\r",
+													"        pm.test(\"Добавить товар в корзину\", function getName() {\r",
+													"\r",
+													"            const addProductToCart = {\r",
+													"                url: url + \"/carts/\" + cartId + \"/items\",\r",
+													"                method: 'POST',\r",
+													"                body: {\r",
+													"                    mode: 'raw',\r",
+													"                    raw: JSON.stringify({\r",
+													"                        productId: productId,\r",
+													"                        quantity: 3\r",
+													"                    })\r",
+													"                }\r",
+													"            };\r",
+													"\r",
+													"            pm.sendRequest(addProductToCart, (err, res) => { })\r",
+													"        });\r",
+													"    });\r",
+													"});\r",
+													"*/\r",
+													"\r",
+													"pm.test(\"Создание ФИО пользователя\", function getName() {\r",
+													"\r",
+													"    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';\r",
+													"    var charactersLength = characters.length;\r",
+													"    var clientFirstName = \"\";\r",
+													"\r",
+													"    for (var i = 0; i < 10; i++) {\r",
+													"        clientFirstName += characters.charAt(Math.floor(Math.random() * charactersLength));\r",
+													"    }\r",
+													"\r",
+													"    var clientName = \"\";\r",
+													"\r",
+													"    for (var i = 0; i < 10; i++) {\r",
+													"        clientName += characters.charAt(Math.floor(Math.random() * charactersLength));\r",
+													"    }\r",
+													"\r",
+													"    pm.collectionVariables.set(\"customerName\", '\"' + clientFirstName + \" \" + clientName + '\"');\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										},
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 201\", function () {\r",
+													"    pm.response.to.have.status(201);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"cartId\": {{cartIdNEW}},\r\n    \"customerName\": {{customerName}}\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/orders",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"orders"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Обновить заказ",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "Валидные данные с comment",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 204\", function () {\r",
+													"    pm.response.to.have.status(204);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n \"customerName\": {{customerName}},\r\n \"comment\": \"Заказ изменен\" \r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{url}}/orders/{{orderId}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"orders",
+												"{{orderId}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Удалить заказ",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "New Request",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 204\", function () {\r",
+													"    pm.response.to.have.status(204);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/orders/{{orderId}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"orders",
+												"{{orderId}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Оформить единый заказ",
+					"item": [
+						{
+							"name": "Позитивные",
+							"item": [
+								{
+									"name": "Валидные данные",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Status code is 200\", function () {\r",
+													"    pm.response.to.have.status(200);\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/orders/{{orderId}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"orders",
+												"{{orderId}}"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "API-аутентификация",
+			"item": [
+				{
+					"name": "Позитивные",
+					"item": [
+						{
+							"name": "Валидные данные",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"pm.test(\"Создание данных пользователя\", function getName() {\r",
+											"\r",
+											"    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';\r",
+											"    var charactersLength = characters.length;\r",
+											"    var clientName = \"\";\r",
+											"\r",
+											"    for (var i = 0; i < 10; i++) {\r",
+											"        clientName += characters.charAt(Math.floor(Math.random() * charactersLength));\r",
+											"    }\r",
+											"\r",
+											"    pm.collectionVariables.set(\"clientName\", '\"' + clientName + '\"')\r",
+											"    pm.collectionVariables.set(\"clientEmail\", '\"' + clientName + \"@email.ru\" + '\"')\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 201\", function () {\r",
+											"    pm.response.to.have.status(201);\r",
+											"});\r",
+											"\r",
+											"pm.collectionVariables.set(\"accessToken\", pm.response.json().accessToken);"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"clientName\": {{clientName}},\r\n   \"clientEmail\": {{clientEmail}}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api-clients",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api-clients"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Негативные",
+					"item": [
+						{
+							"name": "Без кавычек",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"pm.test(\"Создание данных пользователя\", function getName() {\r",
+											"\r",
+											"    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';\r",
+											"    var charactersLength = characters.length;\r",
+											"    var clientName = \"\";\r",
+											"\r",
+											"    for (var i = 0; i < 10; i++) {\r",
+											"        clientName += characters.charAt(Math.floor(Math.random() * charactersLength));\r",
+											"    }\r",
+											"\r",
+											"    pm.collectionVariables.set(\"clientName\", clientName);\r",
+											"    pm.collectionVariables.set(\"clientEmail\", clientName + \"@email.ru\");\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"clientName\": {{clientName}},\r\n   \"clientEmail\": {{clientEmail}}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api-clients",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api-clients"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Статус API",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Код ответа 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Тело ответа корректно\", function () {\r",
+							"    pm.response.to.have.body({\"status\": \"UP\"});\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/status",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://simple-grocery-store-api.glitch.me",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "url",
+			"value": "http://simple-grocery-store-api.online",
+			"type": "string"
+		},
+		{
+			"key": "cartId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "productId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "itemId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "product",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "clientName",
+			"value": ""
+		},
+		{
+			"key": "clientEmail",
+			"value": ""
+		},
+		{
+			"key": "accessToken",
+			"value": ""
+		},
+		{
+			"key": "customerName",
+			"value": ""
+		},
+		{
+			"key": "cartIdNEW",
+			"value": ""
+		},
+		{
+			"key": "orderId",
+			"value": ""
+		}
+	]
+}
